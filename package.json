@@ -1,0 +1,36 @@
+{
+  "name": "tik",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
+    "axios": "^0.27.2",
+    "moment": "^2.29.4",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.0",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13",
+    "zustand": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.11",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.3"
+  }
+}
