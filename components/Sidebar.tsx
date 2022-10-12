@@ -8,7 +8,7 @@ import { Discover, SuggestedAccounts, Footer } from './index'
 import useAuthStore from '../store/authStore'
 
 const Sidebar = () => {
-  const [togleSidebar, setTogleSidebar] = useState(false)
+  const [togleSidebar, setTogleSidebar] = useState(true)
   const { userProfile }: any = useAuthStore()
   const domantLink =
     'flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#821010] rounded'
