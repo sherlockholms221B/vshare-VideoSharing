@@ -1,13 +1,11 @@
-# EVERYONE Picture Sharing Social Media Application
+# vshare video Sharing Social Media Application
 
-![EVERYONE](https://i.ibb.co/Y3BgVcM/Screenshot-5.png)
-<a href="https://everyoneapp.netlify.app">Live site</a>
+![vshare](https://i.ibb.co/VtDDqpr/Screenshot-8.png)
+<a href="https://vshare-pi.vercel.app/">Live site</a>
 
 ## Introduction
-With React, Sanity.io, Tailwind I have created a Full fleged social media application - from start to finish. EVRYONE named after the Tv series elementry, a series you wouldn't want to watch without headphones, is a spacial photo uploading app similar Pinterest.
-The App is called "EVERYONE" and it is a complex photo sharing social media application that allows users to upload photos, like in this case save, comment on posts, download pictures. With the ability to search by categories,recommend post, delete your post and full authentication functionality.
-
+Vshare is a video sharing social media application similar to Tik Tok. This application is a complex web application with tons of functionality such as like, comment and edit post, profile and suggested account with full auth functionality. Vshare is built with the most advanced content manegment system (sanity) which enhanced it fetching capabilities.
 
 
 Setup:
-- run ```npm i --legacy per deps && npm start``` for the client 
+- run ```npm i --legacy per deps && npm run dev``` for the client 
