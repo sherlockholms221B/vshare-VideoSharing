@@ -50,6 +50,7 @@ const VideoContainer: NextPage<IProps> = ({ post }) => {
     }
   }
 
+  console.log(video.video.asset)
   return (
     <div className='flex flex-col border-b-2 border-gray-200 w-[100%] pb-6 '>
       <div className=''>
