@@ -1,9 +1,14 @@
-import '../styles/globals.css'
+//import app props form next
 import type { AppProps } from 'next/app'
+
+//get next router module
 import { useRouter } from 'next/router'
+
+//get hooks from react
 import { useState, useEffect } from 'react'
 import { Navbar, Sidebar } from '../components/index'
 import LoginPage from './login_page'
+import '../styles/globals.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isSSR, setIsSSR] = useState(true)
