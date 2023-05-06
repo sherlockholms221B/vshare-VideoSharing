@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import * as React from 'react'
 import { NextPage } from 'next'
 import axios from 'axios'
 import Image from 'next/image'
@@ -17,14 +17,14 @@ interface IProps {
 }
 const VideoContainer: NextPage<IProps> = ({ post }) => {
   const { userProfile }: any = useAuthStore()
-  const [liked, setLiked] = useState(false)
-  const [video, setVideo] = useState(post)
-  const [login, setLogin] = useState(false)
+  const [liked, setLiked] = React.useState(false)
+  const [video, setVideo] = React.useState(post)
+  const [login, setLogin] = React.useState(false)
   const filteredLikes = video.likes?.filter(
     (item: any) => item._ref === userProfile?._id
   )
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (filteredLikes?.length > 0) {
       setLiked(true)
     } else {
@@ -32,7 +32,7 @@ const VideoContainer: NextPage<IProps> = ({ post }) => {
     }
   }, [filteredLikes, video.likes])
 
-  useEffect(() => {
+  React.useEffect(() => {
     setVideo(post)
   }, [post])
 
@@ -50,7 +50,6 @@ const VideoContainer: NextPage<IProps> = ({ post }) => {
     }
   }
 
-  console.log(video.video.asset)
   return (
     <div className='flex flex-col border-b-2 border-gray-200 w-[100%] pb-6 '>
       <div className=''>
